@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(255, 229, 178);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    background-color: rgb(205, 247, 205);
+    border:0px;
+}
+table{
+    align-self:center;
+    margin: 0 auto;
+}
+div{
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(214, 222, 255);
+    border-radius:20px;
+    border:1px solid black;
+}
+td{
+    padding:10px;
+}
+span{
+    color:red;
+    font-size: 15px;
+    font-weight:lighter;
+}

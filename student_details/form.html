@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Student Details Submission Form:</h1>
+    <div>
+        <form style="color:rgb(121, 52, 2)" onsubmit="return validte()" onreset="reset()">
+            <table>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td>
+                    <input  type="text" name="name" id="name"><br>
+                    <span id="nmeError"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="admn">ADMN Number: </label></td>
+                <td>
+                    <input  type="text" name="admn" id="admn"><br>
+                    <span id="admnError"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phn">Phone Number: </label></td>
+                <td>
+                    <input  type="tel" name="phn" id="phn" pattern="[0-9]{10}">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td>
+                    <input  type="email" name="eml" id="eml"><br>
+                    <span id="emlError"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="gndr">Gender: </label></td>
+                <td>
+                    <input type="checkbox" name="mgndr" id="mgndr" value="m">
+                    <label for="mgndr">Male</label>
+                    <input type="checkbox" name="fgndr" id="fgndr" value="f">
+                    <label for="fgndr">Female</label><br>
+                    <span id="gndrError"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" style="background-color: rgb(192, 222, 236);height:25px;">
+                    <input type="reset" style="background-color: rgb(254, 194, 90);height:25px;">
+                </td>
+            </tr>
+            </table>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
