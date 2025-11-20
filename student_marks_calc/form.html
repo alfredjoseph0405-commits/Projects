@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="headng" style="margin:0 auto; text-align:center;"><h1>Student Academics</h1></div>
+    <table>
+    <tr><td>
+    <div id="details">
+        <form onSubmit="return validateForm()" onReset="reset()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span id="nameError"></span>
+            <br><br>
+
+            <label for="rollno">Roll Number:</label>
+            <input type="text" id="rollno" name="rollno" pattern="[A-Za-z0-9]{7}">
+            <span id="rollnoError"></span><br><br>
+            <table>
+                <tr class="border">
+                    <th>Subject</th>
+                    <th colspan="2">Marks Obtained</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th>Theory<br><p style="font-size:10px">MAX : 80</p></th>
+                    <th>Practical<br><p style="font-size:10px">MAX : 20</p></th>
+                </tr>
+
+
+                <tr>
+                    <td><label for="subject1">Subject 1 Marks:</label></td>
+                    <td><input type="number" id="sub1thr" name="subject1">
+                    <span id="sub1thrError"></span></td>
+                    <td><input type="number" id="sub1prc" name="subject1">
+                    <span id="sub1prcError"></span></td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="subject2">Subject 2 Marks:</label></td>
+                    <td><input type="number" id="sub2thr" name="subject2">
+                    <span id="sub2thrError"></span></td>
+                    <td><input type="number" id="sub2prc" name="subject2">
+                    <span id="sub2prcError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="subject3">Subject 3 Marks:</label></td>
+                    <td><input type="number" id="sub3thr" name="subject3">
+                    <span id="sub3thrError"></span></td>
+                    <td><input type="number" id="sub3prc" name="subject3">
+                    <span id="sub3prcError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="subject4">Subject 4 Marks:</label></td>
+                    <td><input type="number" id="sub4thr" name="subject4">
+                    <span id="sub4thrError"></span></td>
+                    <td><input type="number" id="sub4prc" name="subject4">
+                    <span id="sub4prcError"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="subject5">Subject 5 Marks:</label></td>
+                    <td><input type="number" id="sub5thr" name="subject5">
+                    <span id="sub5thrError"></span></td>
+                    <td><input type="number" id="sub5prc" name="subject5">
+                    <span id="sub5prcError"></span></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" style="background-color:rgb(114, 214, 248)">
+            <input type="reset" value="Reset" style="background-color:rgb(251, 236, 101)">
+        </form>
+    </div>
+    </td>
+    <td>
+    <div id="result">
+        <h2>Summary:</h2>
+        <p style="margin-left:50px">Result:</p>
+        <span style="margin-left:75px; font-size:15px;" id="resultText"></span><br><br>
+        <p style="margin-left:50px">Grade:</p>
+        <span style="margin-left:75px; font-size:15px;" id="gradeText"></span><br><br>
+        <p style="margin-left:50px ">CGPA:</p>
+        <span style="margin-left:75px; font-size:15px;"id="cgpaText"></span><br><br>
+        <p style="margin-left:50px">Average:</p>
+        <span style="margin-left:75px; font-size:15px;" id="averageText"></span><br><br>
+        
+
+    </div>
+    </td></tr>
+    </table>
+    <script src="script.js"></script> 
+</body>
+</html>
