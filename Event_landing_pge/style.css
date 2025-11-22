@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(242, 178, 104);
+    color:rgb(176, 232, 243);
+    align-items:center;
+    font-weight: bold;
+    font-size: large;
+    text-align:center;
+}
+h1{
+    margin:0 auto;
+    align-self:center;
+    text-align:center;
+}
+span{
+    font-size:medium;
+    color:red;
+}
+div{
+    padding:10px;
+    margin:auto;
+    height:auto;
+    width:auto;
+    background-color:rgb(106, 90, 250);
+    align-items:center;
+    align-self:center;
+    text-align:center;
+}
+button{
+    background-color: rgb(213, 157, 249);
+    margin:5px 30px;
+}
+input{
+    background-color: rgb(205, 247, 205);
+    border:1px dashed  black;
+}
+select{
+    background-color: rgb(205, 247, 205);
+    border:1px dashed  black;
+}
